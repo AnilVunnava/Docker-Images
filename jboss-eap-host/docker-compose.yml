@@ -1,4 +1,3 @@
-version: "1.0"
 services:
     jboss_eap_host:
         build: ./jboss-eap-host
