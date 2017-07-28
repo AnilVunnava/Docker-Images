@@ -6,10 +6,11 @@ Thanks to _[fcarrus/jboss-eap-6.4-host] (https://hub.docker.com/r/fcarrus/jboss-
 
 ## Creating JBoss EAP HostController Image.
 1. git clone https://github.com/AnilVunnava/Docker-Images.git
-2. navigate to folder jboss-eap-host
-3. modify environment variables to .env file
-  * JBOSS_HOST_NAME
-  * JBOSS_DOMAIN_ADDRESS
-  * JBOSS_DOMAIN_USERNAME
-  * JBOSS_DOMAIN_SECRET
+2. modify environment variables to .env file
+    * JBOSS_DOMAIN_ADDRESS
+    * JBOSS_DOMAIN_PORT
+    * JBOSS_DOMAIN_USERNAME
+3. modify the below in jboss-eap-host/host.xml
+    * tag host name="**_slave_**" xmlns="urn:jboss:domain:1.7" name of host your host name and is unique for each host controller
+    * tag secret value="**_xxxxxxx_**"/ to your domain controller's secret key value under tag security-realm name="ManagementRealm"
 4. run command docker-compose up 
