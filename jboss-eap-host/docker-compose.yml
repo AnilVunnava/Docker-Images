@@ -1,0 +1,10 @@
+version: "1.0"
+services:
+    jboss_eap_host:
+        build: ./jboss-eap-host
+        environment:
+            - JBOSS_HOST_NAME=${JBOSS_HOST_NAME}
+            - JBOSS_DOMAIN_ADDRESS=${JBOSS_DOMAIN_ADDRESS}
+            - HOST_FILE=${HOST_FILE}
+            - JBOSS_DOMAIN_USERNAME=${JBOSS_DOMAIN_USERNAME}
+            - JBOSS_DOMAIN_SECRET=${JBOSS_DOMAIN_SECRET}

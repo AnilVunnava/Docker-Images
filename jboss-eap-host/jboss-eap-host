@@ -1,0 +1,14 @@
+# BaseImage as JBoss EAP Host and adding custom host.xml to sync with 
+
+FROM fcarrus/jboss-eap-6.4-host
+
+MAINTAINER anil599,https://github.com/AnilVunnava/ version 1.0
+
+ENV HOST_FILE host.xml
+ENV JBOSS_DOMAIN_ADDRESS 0.0.0.0
+ENV JBOSS_DOMAIN_USERNAME user
+ENV JBOSS_DOMAIN_SECRET secret
+ENV JBOSS_HOST_NAME host
+
+COPY ${HOST_FILE} /opt/jboss/domain/configuration/
+ENTRYPOINT /opt/jboss/bin/domain.sh
