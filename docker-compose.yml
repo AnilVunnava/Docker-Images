@@ -1,0 +1,8 @@
+version: "2"
+services:
+    jboss_eap_host:
+        build : DockerFile
+        environment:
+            - JBOSS_DOMAIN_ADDRESS=${JBOSS_DOMAIN_ADDRESS}
+            - JBOSS_DOMAIN_PORT=${JBOSS_DOMAIN_PORT}
+            - JBOSS_DOMAIN_USER=${JBOSS_DOMAIN_USER}
