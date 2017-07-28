@@ -8,8 +8,8 @@ Thanks to _[fcarrus/jboss-eap-6.4-host] (https://hub.docker.com/r/fcarrus/jboss-
 1. git clone https://github.com/AnilVunnava/Docker-Images.git
 2. navigate to folder jboss-eap-host
 3. modify environment variables to .env file
-  * JBOSS_HOST_NAME
-  * JBOSS_DOMAIN_ADDRESS
-  * JBOSS_DOMAIN_USERNAME
-  * JBOSS_DOMAIN_SECRET
+     * JBOSS_HOST_NAME
+     * JBOSS_DOMAIN_ADDRESS
+     * JBOSS_DOMAIN_USERNAME
+     * JBOSS_DOMAIN_SECRET
 4. run command docker-compose up 
